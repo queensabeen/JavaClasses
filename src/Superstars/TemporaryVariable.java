@@ -1,4 +1,4 @@
-package com.syntax.class11;
+package Superstars;
 
 public class TemporaryVariable {
 
