@@ -1,4 +1,4 @@
-package come.syntax.class11;
+package com.syntax.class11;
 
 import java.util.Scanner;
 
