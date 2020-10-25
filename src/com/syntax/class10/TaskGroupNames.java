@@ -16,7 +16,7 @@ public class TaskGroupNames {
 		System.out.println("---------Another way-----------");
 		
 		String []names= {"Sanjida", "Sabah", "Sabeen", "Sandro", "Safiye"};
-		System.out.println("names[2");
+		System.out.println(names[2]);
 
 	}
 
