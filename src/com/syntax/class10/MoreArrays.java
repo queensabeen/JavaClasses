@@ -14,7 +14,7 @@ public class MoreArrays {
 		for (int i=0; i<grades.length; i++) {
 			
 			char valueFromArray=grades[i];
-			System.out.println(valueFromArray);
+			System.out.print(valueFromArray);
 		}
 		
 		
