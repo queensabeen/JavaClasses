@@ -5,7 +5,7 @@ public class dog {
     int age;
     String color;
 
-    void bark(){
+    public void bark(){
         System.out.println("Dog barks");
     }
 
