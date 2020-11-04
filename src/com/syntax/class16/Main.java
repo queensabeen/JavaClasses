@@ -10,6 +10,7 @@ public class Main {
 
         VoidMethod.print("Aladdin");
 
+
     }
 
 }
