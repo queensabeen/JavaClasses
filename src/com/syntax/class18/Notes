@@ -1,0 +1,85 @@
+Yet another type of Variables
+
+    1) Local
+    2) Instance variables
+    3) Static variables
+
+  Local Variables (preferred):
+        - any variable that is declared inside a method or a block like:
+                                                     - while loop
+                                                     - for loop
+                                                     - if condition
+                                                     - or inside the constructor
+        Properties of Local Variables:
+              1) we cannot access them outside of the block
+                            eg) if (2>1){
+                            int x=10; //this variable will not be accessible outside the curly brackets
+                            }
+              2) when the method is done, these are destroyed and memory (RAM) is freed - efficient memory use
+
+
+  Instance Variables (discouraged):
+        - all of the variables which are declared outside of the methods or block or constructors but inside a class
+
+        Properties of Instance Variables:
+              1) memory is allocated inside RAM as soon as the object is created and it stays in the memory
+                    until the closing bracket
+
+
+  Static Variables:
+              1) declared outside of the methods, constructors and block of codes with a static keyword
+
+
+  Access modifiers:
+        - keywords that help us to reduce visibility of the variables and methods
+        - no one else from other classes or packages can modify our data
+              1) private:
+                    - if used with variable or method, that variable is only accessible from the same class
+                    - we use it to protect critical information that we do not want to expose
+
+                        eg) class Account{
+                        private int balance;
+
+                        void depositMoney(){
+                            if(boolean properChannel, int money){
+                                balance=balance+money
+                                }
+                            }
+                        }
+
+                        class hacker{
+                        balance=100000;//CE cannot access
+
+                        }
+
+              2) Default:
+                    - not a keyword
+                    - it is a behaviour that is assigned to the methods or properties automatically
+                      if we are not assigning any access modifier
+
+
+                        eg) package 1
+                        class {
+                        String car;
+                        }
+
+                        package 2
+                        class family{
+                        car="I am your little brother. I am using your car today. Forgive me if i destroy it"
+                        }
+
+if we do not specify any modifiers, default behaviour will be assigned to our variables and methods and they will
+only be available within the same package
+
+              3) public:
+                    - if we declare our methods or instance variables, we can access them from any class or package
+
+                    eg) package 1
+                       class {
+                       public String car;
+                       }
+
+                       package 2
+                       class family{
+                       car="I am a random person. I am using your car today. Forgive me if i destroy it"
+                       }
