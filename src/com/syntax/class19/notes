@@ -1,0 +1,64 @@
+Protected/default:
+     - not a keyword - just a behaviour that is assigned to our properties or methods if we do not specify a modifier
+     - these field/properties/attributes or methods/behaviours are only accessible within the same package
+
+Public:
+     - keyword that controls the access to our fields and methods
+     - all methods and fields can be accessed from anywhere inside the code base
+
+Constructors:
+     - special block of code that is executed when we create an object of a class
+     - the purpose of constructors is to initialize the fields
+     - they must have the same name as the name of the class
+     - constructors do not have return types - not even void
+     - constructors should not be static
+     - we can pass arguments to the constructors just like for the methods
+
+Similarities between constructors and methods:
+     - both have parameters
+     - both can have access modifiers like public, private, protected/default
+
+Differences between constructors and methods:
+     - any name for method but only class name for constructors
+     - constructors cannot return any values
+     - automatically called when an instance of the new class is created
+
+When we should use constructors
+     - when we want to control the initialization of the fields
+
+this:
+     - keyword with constructors is used to call other constructors inside constructors and can help
+        reduce the amount of code
+     - if there are 100 lines of code, we can put the code ni a single constructor and call that constructors
+        from other constructors
+
+     eg)
+
+     Class ConsDemo{
+
+     field 1
+     field 2
+     field 3
+     field 4
+
+     ConsDemo(){
+     100 important lines of code
+     }
+
+     ConsDemo(field 1){
+     this()
+     }
+
+     ConsDemo(field 1, field 2){
+     this()
+     }
+
+     ConsDemo(field 1, field 2, field 3){
+     this()
+     }
+
+     ConsDemo(field 1, field 2, field 3, field 4){
+     this()
+     }
+
+     }

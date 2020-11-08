@@ -5,24 +5,23 @@ import java.util.Scanner;
 public class ArraysFromScanner {
 
 	public static void main(String[] args) {
-		// Let's ask user how many names he would like to store and then store those names
-		Scanner scan=new Scanner (System.in);
-		String [] names;
-		int size;
-		
-		System.out.println("How many names would you like to store?");
-		size=scan.nextInt();
-		
-		names =new String[size];
-		
-		for (int i=0; i<size; i++) {
-			System.out.println("Please enter name");
-			names[i]=scan.next();
-		}
-		
-		for (int i=0; i<names.length; i++) {
-			System.out.print(names[i]+" ");
-		}
+		int[][] a = {
+				{-5,-2,-3,7},
+				{1,-5,-2,2},
+				{1,-2,3,-4}
+		};
+
+		int [] arr=new int[a[0].length];
+
+		int output=0;
+		for (int i=0; i%2==0; i++){
+			for (int j=0; j<a[i].length; j++){
+				if (a[i][j]%2==0){
+					output=output+a[i][j];
+				}
+			}
+		}System.out.println(output);
+
 
 	}
 

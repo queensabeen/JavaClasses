@@ -3,7 +3,7 @@ package com.syntax.class17;
 import com.sun.org.apache.xpath.internal.operations.Variable;
 import com.syntax.class18.Employee;
 
-public class main {
+public class mainClass17 {
     public static void main(String[] args) {
 
         Variables variables = new Variables();
